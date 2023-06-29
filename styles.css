@@ -1,39 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 5vmin;
-    display: grid;
-    min-block-size: 100vh;
-    place-items: center;
-    font-family: 'Acme', sans-serif;
-    background: gray;
-}
-
-h1 {
-    background-image: Linear-gradient(90deg, red, #fed90f, #00a2ff, #09f1b8);
-    background-clip: text;
-    font-size: 22vmin;
-    font-weight: 700;
-    -webkit-text-stroke-color: transparent;
-    -webkit-text-stroke-width: calc(1em / 16);
-    -webkit-background-clip: text;
-    color: #000119;
-    padding: calc(calc(1em / 16) / 2);
-    letter-spacing: calc(1em / 8);
-}
-
-p {
-    font-size: x-large;
-}
-
-
-
-
-
-
 @property --rotate {
   syntax: "<angle>";
   initial-value: 132deg;
@@ -41,7 +5,7 @@ p {
 }
 
 :root {
-  --card-height: 65vh;
+  --card-height: 100vh;
   --card-width: calc(var(--card-height) / 1.5);
 }
 
@@ -57,25 +21,30 @@ body {
   box-sizing: border-box;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 30px;
+}
 
-h1 {
+.title {
   background-image: Linear-gradient(90deg, red, #fed90f, #00a2ff, #09f1b8);
   background-clip: text;
-  font-size: 22vmin;
+  font-size: 12vmin;
   font-weight: 700;
   -webkit-text-stroke-color: transparent;
   -webkit-text-stroke-width: calc(1em / 16);
   -webkit-background-clip: text;
   color: #000119;
   padding: calc(calc(1em / 16) / 2);
-  letter-spacing: calc(1em / 8);
+  letter-spacing: 4px;
 }
 
 .card {
   width: auto;
   height: auto;
   padding: 15px;
-  position: relative;
   border-radius: 6px;
   justify-content: center;
   align-items: center;
@@ -150,22 +119,16 @@ a {
   font-weight: bold;
   margin-top: 2rem;
 }
-
-/*--------@medias----------------*/
+/*------ @media --------*/
 @media (max-width: 35rem) {
-        h1, p {
-            font-size: 7vmin;
-            margin-right: 110px;
-        }
+  h1 {
+    font-size: 1em;
+  }
 
-        p {
-            margin: none;
-        }
-       
-        body {
-            min-block-size: 70vh;
-        }
-    }
+  .card {
+    margin-top: 240px;
+  }
+}
 
 
 
