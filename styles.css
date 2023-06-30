@@ -37,7 +37,7 @@ body {
   -webkit-background-clip: text;
   color: #000119;
   padding: calc(calc(1em / 16) / 2);
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   font-family: 'Acme', serif;
 }
 
