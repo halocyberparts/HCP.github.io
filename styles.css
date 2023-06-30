@@ -38,6 +38,7 @@ body {
   color: #000119;
   padding: calc(calc(1em / 16) / 2);
   letter-spacing: 4px;
+  font-family: 'Acme', serif;
 }
 
 .card {
