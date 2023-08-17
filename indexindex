@@ -633,7 +633,7 @@
             <div class="container">
                 <div class="fe-box">
                     <figure class="feature-box">
-                        <img src="./images/free_shipping.png" alt="" />
+                        <img src="./imageshcp/free_shipping.png" alt="" />
                         <figcaption>Free Shipping</figcaption>
                     </figure>
                 </div>
@@ -779,10 +779,10 @@
         <div class="container-footer">
             <div class="row">
                 <div class="col-lg-4 col-md-6 contact1">
-                    <img src="../Marketing /images/Logos/logo2.png" class="footer-logo" alt="Ora - Logo">
+                    <img src="./imageshcp/Logos/halocyber2.jpg" class="footer-logo" alt="Ora - Logo">
                     <h4>Contact</h4>
-                    <p><span class="fw-bold">Address:</span> Rr. Ferid Curri, 10000, Prishtina</p>
-                    <p><span class="fw-bold">Tel:</span> +383 (0) 49 77 80 80</p>
+                    <p><span class="fw-bold">Address:</span> P.O Box</p>
+                    <p><span class="fw-bold">Tel:</span> Google</p>
                     <p><span class="fw-bold">Open:</span> 07:00 - 22:00, Monday - Friday</p>
                     <div class="social-fllw">
                         <h4>Follow us</h4>
@@ -854,7 +854,7 @@
         <div class="cookie">
             <div class="welcome-alert alert alert-dismissible fade show" role="alert">
                 <section class="ms">
-                    <strong>Hello, Welcome to chavaconstruction.online!</strong>
+                    <strong>Hello, Welcome to Halocyberparts.com!</strong>
                     <h1 id="author">By: <strong>Halocyberparts</strong></h1>
                 </section>
                 <button type="button" class="btn-close welcome"></button>
