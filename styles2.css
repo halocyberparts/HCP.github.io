@@ -1125,6 +1125,7 @@ body.dark .dark-light i.sun,
     width: 100%;
     height: clamp(auto, 220px, auto);
     background-color: dodgerblue;
+    border-radius: 15px;	
 }
 
 .newsletter * {
