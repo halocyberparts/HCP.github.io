@@ -672,7 +672,8 @@ body.dark .dark-light i.sun,
     height: 100%;
     margin: 0 auto;
     padding: 0;
-}
+    border-radius: 12px;
+}	
 
 /* Products */
 .products .pm {
