@@ -926,9 +926,10 @@ body.dark .dark-light i.sun,
 
 .circle-img-inner .c-gift {
     width: 100%;
-    background: linear-gradient(var(--blue-mad), var(--white)), url("../img/banner/banner-img.jpg") no-repeat center center / cover;
+    /*background: linear-gradient(var(--blue-mad), var(--white)), url("../img/banner/banner-img.jpg") no-repeat center center / cover;*/
     background-blend-mode: saturation;
     z-index: 1;
+    background: gray;	
 }
 
 .banner-text * {
