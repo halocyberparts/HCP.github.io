@@ -341,7 +341,7 @@ ul {
 .footer-logo {
     /* display: inline-block; */
     max-width: 100%;
-    height: 40px;
+    height: 80px;
 }
 
 .header--log,
@@ -655,7 +655,7 @@ body.dark .dark-light i.sun,
 
 .cat-box {
     width: auto;
-    height: 70px;
+    height: 120px;
     background-color: var(--gray);
     box-shadow: var(--cat-shadow);
     border-radius: 4px;
@@ -848,7 +848,7 @@ body.dark .dark-light i.sun,
     height: 40vh;
     text-align: center;
     background-blend-mode: saturation;
-    background: darkorange;
+    background: url("../images/A507-4.jpg");
     border-bottom: solid 2px white;
     border-top: solid 2px white;
 }
@@ -1124,10 +1124,11 @@ body.dark .dark-light i.sun,
 
 /* Newsletter */
 .newsletter {
-    width: 100%;
+    width: 90%;
     height: clamp(auto, 220px, auto);
     background-color: dodgerblue;
-    border-radius: 15px;	
+    border-radius: 15px;
+    margin-left: 75px;	
 }
 
 .newsletter * {
@@ -1504,7 +1505,7 @@ width: 100%;
     padding: 100px 0;
     width: 100%;
     height: 100%;
-    background-color: hsl(0, 0%, 0%, .8);
+    
 }
 
 .hero .row {
@@ -1709,7 +1710,7 @@ width: 100%;
     text-align: center;
     width: 100%;
     height: auto;
-    background: url("../img/Logos/halocyber-001\ \(1\).jpg") repeat center center / contain;
+    background: url("../images/Logos/halocybe2.png") repeat center center / contain;
 }
 
 .about-head {
@@ -1767,11 +1768,13 @@ marquee {
     width: 100%;
     height: auto;
     text-align: center;
-    background: url("../img/banner/shopping2.jpg") repeat center center / contain;
+    background: url("../images/Logos/halocyber-001\ \(1\).jpg") repeat center center / contain;
 }
 
 .contact {
     margin: 50px auto;
+    background: #00a2ff;
+    max-width: 1150px !important;
 }
 
 .form-details {
@@ -1782,6 +1785,7 @@ marquee {
     padding: 40px;
     border: 1px solid var(--gray);
     border-radius: 8px;
+    background: dodgerblue
 }
 
 .details {
