@@ -14,7 +14,6 @@
     box-sizing: border-box;
     word-break: break-all;
     word-wrap: break-word;
-    text-align: center;
 }
 
 *::selection {
@@ -50,7 +49,7 @@ html {
 
 body {
     color: var(--black-med);
-    background-color: lightgray;
+    background-color: var(--body-bg-color);
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1rem;
     min-height: 100vh;
@@ -207,12 +206,6 @@ ul {
     margin-left: auto;
 }
 
-.col-12 {
-    flex: 0 0 auto;
-    width: 100%;
-    background-image: Linear-gradient(90deg, red, #fed90f, #00a2ff, #09f1b8);
-}
-
 .row {
     --bs-gutter-x: 30px;
 }
@@ -222,19 +215,6 @@ ul {
     border-radius: 5px;
     box-shadow: var(--shadow);
     background-color: var(--white);
-}
-
-.intro-h1 {
-    font-family: 'Acme', serif;
-    text-align: center;
-    font-size: 144px;
-    -webkit-text-stroke: 2px skyblue;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.r-1 {
- margin-left: 300px;
 }
 
 .btn {
@@ -321,7 +301,7 @@ ul {
 
 /* Header & Menu ( nav ) */
 .header {
-    background-image: Linear-gradient(90deg, red, #fed90f, #00a2ff, #09f1b8);
+    background-color: var(--body-bg-color);
     height: 70px;
     border-bottom: 1px solid var(--border-color1);
     z-index: 9999 !important;
@@ -341,7 +321,7 @@ ul {
 .footer-logo {
     /* display: inline-block; */
     max-width: 100%;
-    height: 80px;
+    height: 40px;
 }
 
 .header--log,
@@ -655,7 +635,7 @@ body.dark .dark-light i.sun,
 
 .cat-box {
     width: auto;
-    height: 120px;
+    height: 70px;
     background-color: var(--gray);
     box-shadow: var(--cat-shadow);
     border-radius: 4px;
@@ -672,8 +652,7 @@ body.dark .dark-light i.sun,
     height: 100%;
     margin: 0 auto;
     padding: 0;
-    border-radius: 12px;
-}	
+}
 
 /* Products */
 .products .pm {
@@ -685,8 +664,6 @@ body.dark .dark-light i.sun,
     display: block;
     color: var(--white);
     text-align: center;
-    background: white;
-    border-radius: 15px;
 }
 
 .product-item .discount {
@@ -847,10 +824,8 @@ body.dark .dark-light i.sun,
     width: 100%;
     height: 40vh;
     text-align: center;
+    background: linear-gradient(var(--blue-mad), var(--white)), url("../img/features/free_shipping.png") no-repeat center center / cover;
     background-blend-mode: saturation;
-    background: url("../images/A507-4.jpg");
-    border-bottom: solid 2px white;
-    border-top: solid 2px white;
 }
 
 .product-support .row {
@@ -926,10 +901,9 @@ body.dark .dark-light i.sun,
 
 .circle-img-inner .c-gift {
     width: 100%;
-    /*background: linear-gradient(var(--blue-mad), var(--white)), url("../img/banner/banner-img.jpg") no-repeat center center / cover;*/
+    background: linear-gradient(var(--blue-mad), var(--white)), url("../img/banner/banner-img.jpg") no-repeat center center / cover;
     background-blend-mode: saturation;
     z-index: 1;
-    background: gray;	
 }
 
 .banner-text * {
@@ -1071,13 +1045,11 @@ body.dark .dark-light i.sun,
     width: 100%;
     height: 100%;
     padding: 0;
-    background: yellow;
-    /*background: url("../img/Logos/halocyber2.jpg") no-repeat center center / cover;*/
+    background: url("../img/Logos/halocyber2.jpg") no-repeat center center / cover;
 }
 
 .collection .c-box-img:nth-child(2) {
-    background: lightgreen;
-    /*background: url("../img/Logos/rainlogo.jpg") no-repeat center center / cover;*/
+    background: url("../img/Logos/rainlogo.jpg") no-repeat center center / cover;
 }
 
 .xs-c-oll .c-box-img:nth-child(1) {
@@ -1124,11 +1096,9 @@ body.dark .dark-light i.sun,
 
 /* Newsletter */
 .newsletter {
-    width: 90%;
+    width: 100%;
     height: clamp(auto, 220px, auto);
     background-color: dodgerblue;
-    border-radius: 15px;
-    margin-left: 75px;	
 }
 
 .newsletter * {
@@ -1185,12 +1155,6 @@ body.dark .dark-light i.sun,
 .footer {
     margin-top: 0px !important;
     border-top: var(--footer-border);
-}
-
-.col-12 {
-background-image: Linear-gradient(90deg, red, #fed90f, #00a2ff, #09f1b8);
-border-radius: 15px;
-width: 100%;
 }
 
 .container-footer {
@@ -1505,7 +1469,7 @@ width: 100%;
     padding: 100px 0;
     width: 100%;
     height: 100%;
-    
+    background-color: hsl(0, 0%, 0%, .8);
 }
 
 .hero .row {
@@ -1710,7 +1674,7 @@ width: 100%;
     text-align: center;
     width: 100%;
     height: auto;
-    background: url("./imageshcp/Logos/halocyber-001 (1).jpg") repeat center center / contain;
+    background: url("../img/Logos/halocybe2.png") repeat center center / contain;
 }
 
 .about-head {
@@ -1768,13 +1732,11 @@ marquee {
     width: 100%;
     height: auto;
     text-align: center;
-    background: url("../imageshcp/Logos/halocyber-001\ \(1\).jpg") repeat center center / contain;
+    background: url("../img/banner/shopping2.jpg") repeat center center / contain;
 }
 
 .contact {
     margin: 50px auto;
-    background: #00a2ff;
-    max-width: 1150px !important;
 }
 
 .form-details {
@@ -1785,7 +1747,6 @@ marquee {
     padding: 40px;
     border: 1px solid var(--gray);
     border-radius: 8px;
-    background: dodgerblue
 }
 
 .details {
@@ -2586,21 +2547,11 @@ marquee {
     .subtotal {
         margin: 50px auto;
     }
-
-    .intro-h1 {
-        font-size: 97px;
-    }
 }
-/*---------------------------------------- @media 600px ---------------------------------------*/
+
 @media screen and (max-width: 600px) {
     .products .row div[class^="col"] {
         width: 80% !important;
-    }
-
-    .intro-h1 {
-        font-size: 57px;
-        margin-top: 15px;
-        margin-bottom: 15px;
     }
 }
 
