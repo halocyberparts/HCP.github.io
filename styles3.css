@@ -2450,6 +2450,7 @@ marquee {
     /* Footer */
     .footer {
         margin-top: 0px !important;
+	background: deepskyblue;
     }
 
     .container-footer div[class^="col"] {
