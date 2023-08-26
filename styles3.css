@@ -2653,8 +2653,8 @@ marquee {
 }
 
 @media screen and (max-width: 375px) {
-    .header--logo {
-        margin-left: 0px;
+     .nav-logo2 {
+       max-width: 128px;
     }
 
     .newsletter {
