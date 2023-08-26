@@ -1221,6 +1221,9 @@ width: 100%;
 
 .footer .footer-logo {
     margin-bottom: 30px;
+    max-width: 298px;
+    height: auto;
+}	
 }
 
 .footer h4 {
