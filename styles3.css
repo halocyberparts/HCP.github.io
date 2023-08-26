@@ -345,6 +345,12 @@ ul {
     height: 50px;
 }
 
+.nav-logo2 {
+    display: inline-block;
+    max-width: 15%;
+    height: auto;
+}
+
 .header--log,
 .darkLight-searchBox,
 .mobile-menu,
