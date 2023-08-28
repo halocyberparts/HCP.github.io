@@ -1135,7 +1135,7 @@ body.dark .dark-light i.moon {
     height: clamp(auto, 220px, auto);
     background-color: dodgerblue;
     border-radius: 15px;
-    margin-left: 75px;	
+   	
     margin-bottom: 80px;
 }
 
