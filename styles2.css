@@ -50,12 +50,13 @@ html {
 
 body {
     color: var(--black-med);
-    background-color: lightgray;
+    background-color: gray;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1rem;
     min-height: 100vh;
     overflow-y: auto !important;
     overflow-x: hidden;
+    background: url("./images/websiteunderconstruction.png");
 }
 
 a {
