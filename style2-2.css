@@ -217,7 +217,7 @@ ul {
     border: solid 2px red;
 }
 .text-center {
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .row {
