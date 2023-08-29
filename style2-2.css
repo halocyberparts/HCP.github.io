@@ -222,6 +222,7 @@ ul {
 
 .row {
     --bs-gutter-x: 30px;
+    margin-top: 25px;
 }
 
 .box {
@@ -1546,7 +1547,7 @@ body.dark .dark-light i.sun,
 
 .pro-img {
     display: block;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     transition: all .3s ease;
 }
