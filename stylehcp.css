@@ -756,6 +756,7 @@ body.dark .dark-light i.moon {
     width: 100%;
     border-radius: 20px;
     box-shadow: var(--shadow);
+    height: auto;
 }
 
 .details {
