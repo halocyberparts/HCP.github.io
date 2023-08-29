@@ -2662,6 +2662,7 @@ marquee {
         justify-content: center;
         justify-items: space-around;
         gap: 10px;
+	margin-top: 90px;    
     }
 
     .cat-box {
