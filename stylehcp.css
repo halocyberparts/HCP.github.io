@@ -79,7 +79,7 @@ h1,h2,h3,h4,h5,h6 {
 img {
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 75px;
 }
 
 ul {
@@ -229,8 +229,7 @@ ul {
     text-align: center;
     font-size: 144px;
     -webkit-text-stroke: 2px skyblue;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 80px 0 80px 0;
 }
 
 .r-1 {
@@ -1135,7 +1134,6 @@ body.dark .dark-light i.moon {
     height: clamp(auto, 220px, auto);
     background-color: dodgerblue;
     border-radius: 15px;
-   	
     margin-bottom: 80px;
 }
 
@@ -2693,6 +2691,7 @@ marquee {
     .newsletter {
         margin-left: 1px;
         padding: 0 0 0 0;
+        margin-left: 75px;	
     }
 }
 
