@@ -196,8 +196,7 @@ ul {
 .container {
     margin: 0 auto !important;
     --bs-gutter-x: 15px !important;
-    max-width: 1150px !important;
-    background: gainsboro;	
+    max-width: 1150px !important;	
 }
 
 .container-footer {
