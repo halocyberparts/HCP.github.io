@@ -939,6 +939,7 @@ body.dark .dark-light i.moon {
 
 .banner-text * {
     color: var(--white) !important;
+    text-align: left;
 }
 
 .banner-text {
@@ -1185,6 +1186,10 @@ body.dark .dark-light i.moon {
     color: #ffffff;
     background-color: #4b4b48;
     white-space: nowrap;
+}
+
+.title-ali {
+    text-align: center;
 }
 
 /* Footer */
