@@ -2619,19 +2619,12 @@ font-family: 'Acme', serif;
     .discount {
         top: 3%;
     }
-/*
-    .col-12 {
-        margin-left: 60px;
-    }
-    */
 }
 
 /* Media Queries */
 /*---------------------------------------- @media 600px ---------------------------------------*/
 
 @media (orientation: landscape) and (max-width: 667px){
-  
-
     .about-us h1 {
         font-size: 100px;
     } 
@@ -2641,13 +2634,11 @@ font-family: 'Acme', serif;
     .header--logo {
         margin-left: 0px;
     }
-	
-    .col-12 {
-        margin-left: 40px;
-    }
-	
+
     .about-us h1 {
         font-size: 53px;
     } 
 }
+
+
 
