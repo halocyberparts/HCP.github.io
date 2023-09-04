@@ -2141,10 +2141,6 @@ marquee {
         justify-content: space-around;
     }
 
-    .header {
-         height: 60px; 
-    }
-
     .header--logo {
         margin-left: 50px;
     }
