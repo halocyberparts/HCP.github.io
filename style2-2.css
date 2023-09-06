@@ -853,7 +853,7 @@ body.dark .dark-light i.moon {
     height: 40vh;
     text-align: center;
     background-blend-mode: saturation;
-    background: url("../images/aluminus.jpeg");
+    background: url("./images/aluminus.jpeg");
     border-bottom: solid 2px white;
     border-top: solid 2px white;
 }
@@ -1078,24 +1078,24 @@ body.dark .dark-light i.moon {
     height: 100%;
     padding: 0;
     background: yellow;
-    background: url("../images/Logos/halocyber-001\ \(1\).jpg") no-repeat center center / cover;
+    background: url("./images/Logos/halocyber-001\ \(1\).jpg") no-repeat center center / cover;
 }
 
 .collection .c-box-img:nth-child(2) {
     background: lightgreen;
-    background: url("../images/Logos/rainlogo.jpg") no-repeat center center / cover;
+    background: url("./images/Logos/rainlogo.jpg") no-repeat center center / cover;
 }
 
 .xs-c-oll .c-box-img:nth-child(1) {
-    background: url("../images/free_shipping.png") no-repeat center center / cover;
+    background: url("./images/free_shipping.png") no-repeat center center / cover;
 }
 
 .xs-c-oll .c-box-img:nth-child(2) {
-    background: url("../images/computer.png") no-repeat center center / cover;
+    background: url("./images/computer.png") no-repeat center center / cover;
 }
 
 .xs-c-oll .c-box-img:nth-child(3) {
-    background: url("../images/A133-2.jpg") no-repeat center center / cover;
+    background: url("./images/A133-2.jpg") no-repeat center center / cover;
 }
 
 .collection .c-box {
@@ -1510,11 +1510,11 @@ width: 100%;
     text-align: center;
     width: 100%;
     height: auto;
-    background: url("../img/Logos/halocyber2.jpg") repeat center center / contain;
+    background: url("./img/Logos/halocyber2.jpg") repeat center center / contain;
 }
 
 .blog-hero {
-    background: url("../img/banner/shopping.jpg") repeat center center / contain;
+    background: url("./img/banner/shopping.jpg") repeat center center / contain;
 }
 
 .hero .container-fluid {
@@ -1726,7 +1726,7 @@ width: 100%;
     text-align: center;
     width: 100%;
     height: auto;
-    background: url("../images/Logos/halocyber-001\ \(1\).jpg") center;
+    background: url("./images/Logos/halocyber-001\ \(1\).jpg") center;
 }
 
 .about-head {
@@ -1784,7 +1784,7 @@ marquee {
     width: 100%;
     height: auto;
     text-align: center;
-    background: url("../images/contactpic002.jpeg");
+    background: url("./images/contactpic002.jpeg");
 }
 
 .contact {
