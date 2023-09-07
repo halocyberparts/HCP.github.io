@@ -939,7 +939,7 @@ body.dark .dark-light i.moon {
 
 .banner-text * {
     color: var(--white) !important;
-    text-align: left;
+    text-align: center;
 }
 
 .banner-text {
