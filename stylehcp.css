@@ -2402,7 +2402,7 @@ marquee {
 
     /* Categories */
     .product-box {
-        height: 428px;
+        height: 328px;
         padding: 0;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: repeat(5, minmax(100px, 120px));
