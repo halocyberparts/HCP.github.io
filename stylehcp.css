@@ -2643,7 +2643,11 @@ marquee {
         .img {
             height: 79px;
         }
-    }
+
+	.cat-box img {
+	    width: 80%;
+	    height: 80%;
+	}
   
   @media (orientation: portrait) {
     body {
