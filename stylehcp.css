@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-
 @import "vars.css";
 
 /*===> All Styles
@@ -853,7 +852,7 @@ body.dark .dark-light i.moon {
     height: 40vh;
     text-align: center;
     background-blend-mode: saturation;
-    background: url("../images/A507-4.jpg");
+    background: url("./images/aluminus.jpeg");
     border-bottom: solid 2px white;
     border-top: solid 2px white;
 }
@@ -1078,24 +1077,24 @@ body.dark .dark-light i.moon {
     height: 100%;
     padding: 0;
     background: yellow;
-    background: url("../images/Logos/halocyber-001\ \(1\).jpg") no-repeat center center / cover;
+    background: url("./images/Logos/halocyber-001 (1).jpg") no-repeat center center / cover;
 }
 
 .collection .c-box-img:nth-child(2) {
     background: lightgreen;
-    background: url("../images/Logos/rainlogo.jpg") no-repeat center center / cover;
+    background: url("./images/Logos/rainlogo.jpg") no-repeat center center / cover;
 }
 
 .xs-c-oll .c-box-img:nth-child(1) {
-    background: url("../images/free_shipping.png") no-repeat center center / cover;
+    background: url("./images/free_shipping.png") no-repeat center center / cover;
 }
 
 .xs-c-oll .c-box-img:nth-child(2) {
-    background: url("../images/computer.png") no-repeat center center / cover;
+    background: url("./images/computer.png") no-repeat center center / cover;
 }
 
 .xs-c-oll .c-box-img:nth-child(3) {
-    background: url("../images/A133-2.jpg") no-repeat center center / cover;
+    background: url("./images/A133-2.jpg") no-repeat center center / cover;
 }
 
 .collection .c-box {
@@ -1510,11 +1509,11 @@ width: 100%;
     text-align: center;
     width: 100%;
     height: auto;
-    background: url("../img/Logos/halocyber2.jpg") repeat center center / contain;
+    background: url("./images/Logos/halocyber2.jpg") repeat center center / contain;
 }
 
 .blog-hero {
-    background: url("../img/banner/shopping.jpg") repeat center center / contain;
+    background: url("./images/shopping.jpg") repeat center center / contain;
 }
 
 .hero .container-fluid {
@@ -1726,7 +1725,7 @@ width: 100%;
     text-align: center;
     width: 100%;
     height: auto;
-    background: url("../images/Logos/halocyber-001\ \(1\).jpg") center;
+    background: url("./images/Logos/halocyber-001 (1).jpg") center;
 }
 
 .about-head {
@@ -1784,7 +1783,7 @@ marquee {
     width: 100%;
     height: auto;
     text-align: center;
-    background: url("../images/Logos/halocyber-001\ \(1\).jpg") repeat center center / contain;
+    background: url("./images/contactpic002.jpeg");
 }
 
 .contact {
@@ -2084,7 +2083,7 @@ marquee {
     }
 
     .newsletter {
-        padding: 0 0 0 33px;
+        padding-left: 33px;
     }
 
     .back-to-top {
@@ -2402,7 +2401,7 @@ marquee {
 
     /* Categories */
     .product-box {
-        height: 328px;
+        height: 428px;
         padding: 0;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: repeat(5, minmax(100px, 120px));
@@ -2628,7 +2627,6 @@ marquee {
     }
     
         .banner {
-            margin-left: -85px;
             width: 1400px;
         }
 
@@ -2636,18 +2634,10 @@ marquee {
             padding: 9px 6px;
         }
 
-        .fe-box {
-            padding: ;
-        }
-
         .img {
             height: 79px;
         }
-
-	.cat-box img {
-	    width: 80%;
-	    height: 80%;
-	}
+    }
   
   @media (orientation: portrait) {
     body {
@@ -2686,7 +2676,7 @@ marquee {
 
     /* Categories */
     .product-box {
-        height: 444px !important;
+        height: 584px !important;
         grid-template-columns: repeat(2, minmax(80px, 1fr)) !important;
         grid-template-rows: repeat(auto-fill, minmax(auto, 1fr)) !important;
         justify-content: center;
@@ -2723,8 +2713,10 @@ marquee {
         padding: 0 0 0 0;
         margin-left: 75px;	
     }
-    
-    margin-left: 45px; 
+
+    .about-us h1 {
+        font-size: 93px;
+    }
 }
 
 @media screen and (max-width: 374px) {
