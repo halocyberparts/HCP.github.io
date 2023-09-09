@@ -2042,7 +2042,10 @@ font-family: 'Acme', serif;
     .blog-details h1 {
         left: 20px;
     }
-}
+
+    .about-us h1 {
+	    font-size: 120px;
+    }
 
 @media screen and (max-width: 917px) {
     .menu-item > a {
