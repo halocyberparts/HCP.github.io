@@ -357,7 +357,7 @@ ul {
 
  .header--logo > img {
     display: block;
-    max-width: clamp(80%, 90%, 100%);
+    max-width: 120px;
 } 
 
 .header--logo a {
