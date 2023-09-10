@@ -2617,6 +2617,7 @@ font-family: 'Acme', serif;
 @media screen and (max-width: 600px) {
     .products .row div[class^="col"] {
         width: 80% !important;
+	margin-left: 25px;    
     }
 }
 
