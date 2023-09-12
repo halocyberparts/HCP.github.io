@@ -658,7 +658,7 @@ body.dark .dark-light i.moon {
 
 .cat-box {
     width: auto;
-    height: 120px;
+    height: 100px;
     background-color: var(--gray);
     box-shadow: var(--cat-shadow);
     border-radius: 4px;
