@@ -1773,6 +1773,10 @@ marquee {
 }
 
 /* Contact */
+.hero-heading-h2 {
+	margin-top: 20px;
+}
+
 .contact-hero {
     display: flex;
     align-items: center;
