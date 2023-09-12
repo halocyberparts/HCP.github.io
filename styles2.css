@@ -334,6 +334,7 @@ ul {
 
 .header--logo {
     height: auto;
+    max-width: 14%;
 }
 
 .nav-logo,
@@ -2160,6 +2161,7 @@ marquee {
 
     .header--logo {
         margin-left: 50px;
+	max-width: 21%;
     }
 
     .open-nav,
