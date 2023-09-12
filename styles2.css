@@ -2651,6 +2651,9 @@ marquee {
     .standalone-box {
         padding: 9px 6px;
     }
+
+    .img {
+        max-width: 35%;
   }
     
 @media screen and (max-width: 600px) {
