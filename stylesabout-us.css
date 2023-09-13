@@ -216,15 +216,22 @@ ul {
     width: 100%;
     background-image: Linear-gradient(90deg, red, #fed90f, #00a2ff, #09f1b8);
     border-radius: 15px;
-   
-    
 }
+
+.col-99 {
+    flex: 0 0 auto;
+    width: 100%;
+    background-image: Linear-gradient(90deg, red, #fed90f, #00a2ff, #09f1b8);
+    border-radius: 15px;
+    margin-left: 40px;
+}
+
 
 .img-sm {
     border: solid 2px red;
 }
 .text-center {
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .row {
@@ -725,17 +732,22 @@ body.dark .dark-light i.moon {
 
 .title {
     margin: 40px auto;
+    font-family: 'Acme', serif;
+    text-align: center;
+    -webkit-text-stroke: 2px skyblue;
+    margin: 80px 0 80px 0;
 }
 
+
 .title-sec {
-    font-size: 1.3rem !important;
+    font-size: 5.3rem !important;
     font-size: 20px;
     text-transform: capitalize;
 }
 
 .sub-title {
     color: var(--black-high);
-    font-size: 2.1rem;
+    
     font-weight: 600;
 }
 
@@ -912,7 +924,7 @@ body.dark .dark-light i.moon {
     bottom: 10px;
     width: 100%;
     height: 320px;
-    background-color: hsl(0, 0%, 0%, .5); */
+    background-color: hsl(0, 0%, 0%, .5); 
 }
 
 .circle-img-inner .c-gift {
@@ -1061,23 +1073,23 @@ body.dark .dark-light i.moon {
     width: 100%;
     height: 100%;
     padding: 0;
-    background: url("#") no-repeat center center / cover;
+    background: url("../img/") no-repeat center center / cover;
 }
 
 .collection .c-box-img:nth-child(2) {
-    background: url("#") no-repeat center center / cover;
+    background: url("../img/banner/shopping2.jpg") no-repeat center center / cover;
 }
 
 .xs-c-oll .c-box-img:nth-child(1) {
-    background: url("#") no-repeat center center / cover;
+    background: url("../img/banner/men-collection.jpg") no-repeat center center / cover;
 }
 
 .xs-c-oll .c-box-img:nth-child(2) {
-    background: url("#") no-repeat center center / cover;
+    background: url("../img/banner/women-collection.jpg") no-repeat center center / cover;
 }
 
 .xs-c-oll .c-box-img:nth-child(3) {
-    background: url("#") no-repeat center center / cover;
+    background: url("../img/banner/kid-collection.jpg") no-repeat center center / cover;
 }
 
 .collection .c-box {
@@ -1471,6 +1483,17 @@ body.dark .dark-light i.moon {
 }
 
 /* Products Page */
+.intro-h1 {
+    font-family: 'Acme', serif;
+    text-align: center;
+    -webkit-text-stroke: 2px skyblue;
+    margin: 80px 0 80px 0;
+}
+
+.intro-h1 h1 {
+    font-size: 88px;
+}
+
 .hero,
 .blog-hero {
     display: flex;
@@ -1479,11 +1502,11 @@ body.dark .dark-light i.moon {
     text-align: center;
     width: 100%;
     height: auto;
-    background: url("./images/A268-001.jpg") repeat center center / contain;
+    background: url("../images/A268-001.jpg") repeat center center / contain;
 }
 
 .blog-hero {
-    background: url("./images/A507-4.jpg") repeat center center / contain;
+    background: url("../images/A507-4.jpg") repeat center center / contain;
 }
 
 .hero .container-fluid {
@@ -1695,7 +1718,7 @@ body.dark .dark-light i.moon {
     text-align: center;
     width: 100%;
     height: auto;
-    background: url("./images/shopping.jpg") repeat center center / contain;
+    background: url("../img/banner/shopping.jpg") repeat center center / contain;
 }
 
 .about-head {
@@ -1732,7 +1755,7 @@ marquee {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
 
-/*
+
  .about-us h1 {
     padding: 10px 0;
     font-size: 7rem;
@@ -1740,12 +1763,19 @@ marquee {
     text-align: center;
     margin: 0px 0px 80px 0px;
 } 
-*/
+
+.about-us-2 h1 {
+    padding: 10px 0;
+    font-size: 3rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 0px 0px 80px 0px;
+} 
 
 .about-us h1 {
-font-family: 'Acme', serif;
+    font-family: 'Acme', serif;
     text-align: center;
-    font-size: 93px;
+    font-size: 53px;
     -webkit-text-stroke: 2px skyblue;
     margin: 80px 0 80px 0;
 }
@@ -1764,7 +1794,7 @@ font-family: 'Acme', serif;
     width: 100%;
     height: auto;
     text-align: center;
-    background: url("./image/shopping2.jpg") repeat center center / contain;
+    background: url("../images/shopping.gif") repeat center center / contain;
 }
 
 .contact {
@@ -2013,6 +2043,24 @@ font-family: 'Acme', serif;
 }
 
 /* Media Queries */
+@media screen and (min-width: 900px) and (max-width: 1450px)  {
+    .intro-h1 h1 {
+        font-size: 164px;
+      }
+
+      .sub-title {
+      font-size: 7.1rem;
+    }
+
+    .title-sec {
+        font-size: 7.1rem;
+    }
+
+    .about-us h1 {
+        font-size: 7rem;
+    }
+}
+
 @media screen and (max-width: 1050px) {
     .menu-item {
         margin-left: 10px;
@@ -2044,7 +2092,7 @@ font-family: 'Acme', serif;
     }
 
     .about-us h1 {
-	    font-size: 55px;
+        font-size: 4rem;
     }
 }
 
@@ -2095,6 +2143,10 @@ font-family: 'Acme', serif;
         padding: 10px;
         font-size: 15px !important;
     }
+/*
+    .about-us h1 {
+       
+    }*/
 }
 
 @media screen and (min-width: 819.50px) {
@@ -2125,10 +2177,6 @@ font-family: 'Acme', serif;
         justify-content: space-around;
     }
 
-    .header {
-        /* height: 60px; */
-    }
-
     .header--logo {
         margin-left: 50px;
     }
@@ -2138,9 +2186,9 @@ font-family: 'Acme', serif;
         display: block !important;
     }
 
-    /* .header {
+    .header {
         position: relative;
-    } */
+    } 
 
     .menu {
         z-index: 1;
@@ -2529,6 +2577,13 @@ font-family: 'Acme', serif;
     }
 }
 
+@media (orientation: landscape) and (max-width: 768px) {
+    .about-us h1 {
+        font-size: 91px
+    } 
+}
+
+   
 @media screen and (max-width: 768px) {
     .products .row div[class^="col"] {
         width: 50% !important;
@@ -2623,6 +2678,11 @@ font-family: 'Acme', serif;
     .discount {
         top: 3%;
     }
+/*
+    .col-12 {
+        margin-left: 60px;
+    }
+    */
 }
 
 /* Media Queries */
@@ -2630,19 +2690,32 @@ font-family: 'Acme', serif;
 
 @media (orientation: landscape) and (max-width: 667px){
     .about-us h1 {
-        font-size: 91px;
+        font-size: 91px
     } 
+
+    .title {
+        text-align: center;
+        font-size: 144px;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 44px;
+    }
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 376px) {
     .header--logo {
         margin-left: 0px;
     }
 
     .about-us h1 {
-        font-size: 33px;
+        font-size: 53px;
     } 
+
+    .title {
+        text-align: center;
+        font-size: 44px;
+    }
 }
-
-
 
