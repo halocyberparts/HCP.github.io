@@ -2661,7 +2661,8 @@ marquee {
     }
 
     .cat-box img {
-        height: 190%;
+        height: auto;
+	width: 100%;    
     }  
 
     .carousel {
