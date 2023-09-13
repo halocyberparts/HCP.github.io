@@ -2689,7 +2689,7 @@ marquee {
 /*---------------------------------------- @media 600px ---------------------------------------*/
 
 @media (orientation: landscape) and (max-width: 667px){
-    .about-us h1 {
+    .about-title {
         font-size: 91px
     } 
 
@@ -2709,7 +2709,7 @@ marquee {
         margin-left: 0px;
     }
 
-    .about-us h1 {
+    .about-title {
         font-size: 53px;
     } 
 
@@ -2717,5 +2717,6 @@ marquee {
         text-align: center;
         font-size: 44px;
     }
+	ab
 }
 
