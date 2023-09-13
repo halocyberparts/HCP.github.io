@@ -2046,6 +2046,7 @@ font-family: 'Acme', serif;
     .about-us h1 {
 	    font-size: 3.5rem;
     }
+}
 
 @media screen and (max-width: 917px) {
     .menu-item > a {
