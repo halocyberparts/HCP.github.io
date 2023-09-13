@@ -2634,7 +2634,7 @@ font-family: 'Acme', serif;
     } 
 }
 
-@media screen and (max-width: 396px) {
+@media screen and (max-width: 395px) {
     .header--logo {
         margin-left: 0px;
     }
