@@ -1507,11 +1507,11 @@ width: 100%;
     text-align: center;
     width: 100%;
     height: auto;
-    background: url("../img/Logos/halocyber2.jpg") repeat center center / contain;
+    background: url("./images/Logos/halocyber2.jpg") repeat center center / contain;
 }
 
 .blog-hero {
-    background: url("../img/banner/shopping.jpg") repeat center center / contain;
+    background: url("./images/shopping.jpg") repeat center center / contain;
 }
 
 .hero .container-fluid {
