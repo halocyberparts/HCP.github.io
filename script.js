@@ -74,8 +74,8 @@ const checkBgMode = (mode) => {
     if(mode) {
         switch(mode) {
             case 'light-mode':
-                navLogo.src = `${domain}/assets/img/light-logo.png`;
-                footerLogo.src = `${domain}/assets/img/light-logo.png`;
+                navLogo.src = `${domain}./images/logo3`;
+                footerLogo.src = `${domain}./images/logo3`;
             break;
             case 'dark-mode':
                 body.classList.add("dark");
