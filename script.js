@@ -21,15 +21,16 @@ window.onscroll = () => {
     }
 };
 
-window.onload = () => {
-    if(window.location.href.includes("/")) {
-        domain = "..";
-    
-        let imgDir = document.querySelectorAll('img');
 
+    
+  window.onload = () => {
+    if (window.location.pathname.includes("/")) {
+        domain = "..";
+
+        const imgDir = document.querySelectorAll('img');
         imgDir.forEach(item => {
-            if(item.getAttribute('src').indexOf('/assets/') < 1) {
-                const nItem = item.getAttribute('src').replace('/assets', '/assets');
+            if (item.getAttribute('src').indexOf('./assets/') < 1) {
+                const nItem = item.getAttribute('src').replace('./assets', '../assets');
                 item.src = nItem;
             }
         });
@@ -37,20 +38,17 @@ window.onload = () => {
 
     document.querySelector(".loader").classList.add("off");
     setTimeout(() => {
-        document.querySelector(".loader").style = "display: none !important;opacity: 0;z-index: -1;";
+        document.querySelector(".loader").style.display = "none !important; opacity: 0; z-index: -1;";
     }, 700);
 
-    // Dark & Light Mode -> On Load
-    let modeOnload = localStorage.getItem("mode");
+    const modeOnload = localStorage.getItem("mode");
     checkBgMode(modeOnload);
-    
-    // Welcome
-    const welcome = document.querySelector(".welcome-alert"),
-    welcomeCls = document.querySelector(".welcome");
 
-    let welcomeOnload = localStorage.getItem("welcome");
-                    
-    if(welcomeOnload && welcomeOnload == "d-none") {
+    const welcome = document.querySelector(".welcome-alert");
+    const welcomeCls = document.querySelector(".welcome");
+    const welcomeOnload = localStorage.getItem("welcome");
+
+    if (welcomeOnload && welcomeOnload === "d-none") {
         welcome.classList.add("d-none");
     }
 
@@ -60,15 +58,16 @@ window.onload = () => {
     }, 3000);
 
     welcomeCls.addEventListener("click", e => {
-        let touch = e.target;
-        if(touch.classList.contains("welcome")) {
+        const touch = e.target;
+        if (touch.classList.contains("welcome")) {
             setTimeout(() => {
                 welcome.classList.add("d-none");
                 localStorage.setItem("welcome", "d-none");
             }, 500);
         }
     });
-}
+};
+
 
 const checkBgMode = (mode) => {
     if(mode) {
