@@ -28,8 +28,8 @@ window.onload = () => {
         let imgDir = document.querySelectorAll('img');
 
         imgDir.forEach(item => {
-            if(item.getAttribute('src').indexOf('./assets/') < 1) {
-                const nItem = item.getAttribute('src').replace('./assets', '../assets');
+            if(item.getAttribute('src').indexOf('/assets/') < 1) {
+                const nItem = item.getAttribute('src').replace('/assets', '/assets');
                 item.src = nItem;
             }
         });
@@ -74,13 +74,13 @@ const checkBgMode = (mode) => {
     if(mode) {
         switch(mode) {
             case 'light-mode':
-                navLogo.src = `${domain}./images/logo3`;
-                footerLogo.src = `${domain}./images/logo3`;
+                navLogo.src = `${domain}/images/logo3.png`;
+                footerLogo.src = `${domain}/images/logo3.png`;
             break;
             case 'dark-mode':
                 body.classList.add("dark");
-                navLogo.src = `${domain}./images/logo3`;
-                footerLogo.src = `${domain}./images/logo3`;
+                navLogo.src = `${domain}/images/logo3.png`;
+                footerLogo.src = `${domain}/images/logo3.png`;
             break;
             default:
                 return;
