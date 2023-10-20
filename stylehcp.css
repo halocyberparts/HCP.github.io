@@ -651,7 +651,7 @@ body.dark .dark-light i.moon {
 .product-box {
     margin: 50px auto;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 33px;
     grid-auto-rows: repeat(5, minmax(80px, 100px));
 }
