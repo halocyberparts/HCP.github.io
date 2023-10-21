@@ -29,8 +29,8 @@ window.onscroll = () => {
 
         const imgDir = document.querySelectorAll('img');
         imgDir.forEach(item => {
-            if (item.getAttribute('src').indexOf('./HCP.github.io/') < 1) {
-                const nItem = item.getAttribute('src').replace('./HCP.github.io', '../HCP.github.io');
+            if (item.getAttribute('src').indexOf('./images') < 1) {
+                const nItem = item.getAttribute('src').replace('./images', '../images');
                 item.src = nItem;
             }
         });
