@@ -852,7 +852,7 @@ body.dark .dark-light i.moon {
     height: 40vh;
     text-align: center;
     background-blend-mode: saturation;
-    background: url("./images/aluminus.jpeg");
+    background-color: dodgerblue;
     border-bottom: solid 2px white;
     border-top: solid 2px white;
 }
