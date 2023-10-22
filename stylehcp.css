@@ -1181,6 +1181,10 @@ body.dark .dark-light i.moon {
     outline: none;
 }
 
+button {
+	border: nonen;
+}
+
 .n-form button {
     color: #ffffff;
     background-color: #4b4b48;
