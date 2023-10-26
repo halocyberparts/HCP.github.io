@@ -658,7 +658,7 @@ body.dark .dark-light i.moon {
 
 .cat-box {
     width: auto;
-    height: 100px;
+    height: 120px;
     background-color: var(--gray);
     box-shadow: var(--cat-shadow);
     border-radius: 4px;
@@ -746,7 +746,7 @@ body.dark .dark-light i.moon {
 
 .sub-title {
     color: var(--black-high);
-    font-size: larger;
+    font-size: 2.1rem;
     font-weight: 600;
 }
 
@@ -852,7 +852,7 @@ body.dark .dark-light i.moon {
     height: 40vh;
     text-align: center;
     background-blend-mode: saturation;
-    background-color: dodgerblue;
+    background-color: #00a2ff;
     border-bottom: solid 2px white;
     border-top: solid 2px white;
 }
@@ -1077,24 +1077,24 @@ body.dark .dark-light i.moon {
     height: 100%;
     padding: 0;
     background: yellow;
-    background: url("./images/Logos/halocyber-001 (1).jpg") no-repeat center center / cover;
+    background: url("../images/Logos/halocyber-001\ \(1\).jpg") no-repeat center center / cover;
 }
 
 .collection .c-box-img:nth-child(2) {
     background: lightgreen;
-    background: url("./images/Logos/rainlogo.jpg") no-repeat center center / cover;
+    background: url("../images/Logos/rainlogo.jpg") no-repeat center center / cover;
 }
 
 .xs-c-oll .c-box-img:nth-child(1) {
-    background: url("./images/free_shipping.png") no-repeat center center / cover;
+    background: url("../images/free_shipping.png") no-repeat center center / cover;
 }
 
 .xs-c-oll .c-box-img:nth-child(2) {
-    background: url("./images/computer.png") no-repeat center center / cover;
+    background: url("../images/computer.png") no-repeat center center / cover;
 }
 
 .xs-c-oll .c-box-img:nth-child(3) {
-    background: url("./images/A133-2.jpg") no-repeat center center / cover;
+    background: url("../images/A133-2.jpg") no-repeat center center / cover;
 }
 
 .collection .c-box {
@@ -1179,10 +1179,6 @@ body.dark .dark-light i.moon {
     border: 1px solid transparent;
     border-radius: 4px 0px 0px 4px;
     outline: none;
-}
-
-button {
-	border: nonen;
 }
 
 .n-form button {
@@ -1513,11 +1509,11 @@ width: 100%;
     text-align: center;
     width: 100%;
     height: auto;
-    background: url("./images/Logos/halocyber2.jpg") repeat center center / contain;
+    background: url("../img/Logos/halocyber2.jpg") repeat center center / contain;
 }
 
 .blog-hero {
-    background: url("./images/shopping.jpg") repeat center center / contain;
+    background: url("../img/banner/shopping.jpg") repeat center center / contain;
 }
 
 .hero .container-fluid {
@@ -1729,7 +1725,7 @@ width: 100%;
     text-align: center;
     width: 100%;
     height: auto;
-    background: url("./images/Logos/halocyber-001 (1).jpg") center;
+    background: url("../images/Logos/halocyber-001\ \(1\).jpg") center;
 }
 
 .about-head {
@@ -1787,7 +1783,7 @@ marquee {
     width: 100%;
     height: auto;
     text-align: center;
-    background: url("./images/contactpic002.jpeg");
+    background: url("../images/contactpic002.jpeg");
 }
 
 .contact {
@@ -2397,6 +2393,8 @@ marquee {
         -moz-background-size: cover !important;
         -o-background-size: cover !important;
         background-size: cover !important;
+        margin-left: 12px;
+        width: 90%;
     }
 
     .circle-img-inner img {
@@ -2620,7 +2618,7 @@ marquee {
 }
 /*---------------------------------------- @media 600px ---------------------------------------*/
 
-@media (orientation: landscape) and (max-width: 667px){
+@media (orientation: landscape) and (max-width: 666px){
     body {
       flex-direction: row;
     }
@@ -2641,6 +2639,10 @@ marquee {
         .img {
             height: 79px;
         }
+
+        .carousel-item img {
+            width: 100%;
+        }
     }
   
   @media (orientation: portrait) {
@@ -2659,18 +2661,17 @@ marquee {
     }
 
     .intro-h1 {
-        font-size: 47px;
+        font-size: 57px;
         margin-top: 45px;
         margin-bottom: 45px;
     }
 
     .cat-box img {
-        height: auto;
-	width: 100%;    
+        height: 190%;
     }  
 
     .carousel {
-        margin: 0 3% 0 3%;
+        margin: 0 1% 0 1%;
     }
 }
 
@@ -2687,6 +2688,10 @@ marquee {
         justify-content: center;
         justify-items: space-around;
         gap: 10px;
+    }
+
+    .cat-box {
+        height: 50px;
     }
 
     .footer .copyright {
@@ -2718,6 +2723,11 @@ marquee {
     .about-us h1 {
         font-size: 93px;
     }
+
+    .carousel-item img {
+        width: 90%;
+        margin-left: 12px;
+    }
 }
 
 @media screen and (max-width: 374px) {
@@ -2725,3 +2735,7 @@ marquee {
         min-width: 375px;
     }
 }
+
+
+
+ 
