@@ -103,6 +103,47 @@ const checkBgMode = (mode) => {
 // Light & Dark mode, Real Time | Localstorage Changes
 const modeLD = (() => {
     let httpRequest;
+    modeToggle.addEventListener('click', makeRequest);
+    
+    function makeRequest() {
+        httpRequest = new XMLHttpRequest();
+    
+        if (!httpRequest) {
+            console.log('Cannot create an XMLHTTP instance');
+            return false;
+        }
+        
+        httpRequest.onreadystatechange = showContents;
+        httpRequest.onerror = handleRequestError; // Add this line
+        
+        let path = window.location.pathname;
+        let page = path.split("/").pop();
+        httpRequest.open('GET', `${page}`);
+        httpRequest.send();
+    }
+    
+    function showContents() {
+        if (httpRequest.readyState === XMLHttpRequest.DONE) {
+            if (httpRequest.status === 200) {
+                let mode = localStorage.getItem("mode");
+                checkBgMode(mode);
+            } else {
+                console.log('There was a problem with the request.');
+                handleRequestError(); // Handle the error
+            }
+        }
+    }
+
+    // Define a function to handle errors
+    function handleRequestError() {
+        // Implement your error handling logic here
+        console.log('An error occurred during the request.');
+        // You can display an error message to the user or take other appropriate actions.
+    }
+})();
+
+// const modeLD = (() => {
+//     let httpRequest;
     // modeToggle.addEventListener('click', makeRequest);
     
     // function makeRequest() {
@@ -113,13 +154,13 @@ const modeLD = (() => {
     //         return false;
     //     }
         
-        httpRequest.onreadystatechange = showContents;
+    //     httpRequest.onreadystatechange = showContents;
         
-        let path = window.location.pathname;
-        let page = path.split("/").pop();
-        httpRequest.open('GET', `${page}`);
-        httpRequest.send();
-    }
+    //     let path = window.location.pathname;
+    //     let page = path.split("/").pop();
+    //     httpRequest.open('GET', `${page}`);
+    //     httpRequest.send();
+    // }
     
     // function showContents() {
     //     if (httpRequest.readyState === XMLHttpRequest.DONE) {
@@ -131,7 +172,7 @@ const modeLD = (() => {
     //         }
     //     }
     // }
-})();
+// })();
 
 // dark and light mode   
 modeToggle.addEventListener("click", () => {
