@@ -44,28 +44,41 @@ window.onscroll = () => {
     const modeOnload = localStorage.getItem("mode");
     checkBgMode(modeOnload);
 
-    const welcome = document.querySelector(".welcome-alert");
-    const welcomeCls = document.querySelector(".welcome");
-    const welcomeOnload = localStorage.getItem("welcome");
+    // Simplified welcome alert code
+const welcome = document.querySelector(".welcome-alert");
 
-    if (welcomeOnload && welcomeOnload === "d-none") {
-        welcome.classList.add("d-none");
-    }
-
+if (welcome) {
     setTimeout(() => {
-        welcome.classList.add("d-none");
-        localStorage.setItem("welcome", "d-none");
+        welcome.style.display = "none";
     }, 3000);
+}
 
-    welcomeCls.addEventListener("click", e => {
-        const touch = e.target;
-        if (touch.classList.contains("welcome")) {
-            setTimeout(() => {
-                welcome.classList.add("d-none");
-                localStorage.setItem("welcome", "d-none");
-            }, 500);
-        }
-    });
+welcome?.addEventListener("click", () => {
+    welcome.style.display = "none";
+});
+  
+    // const welcome = document.querySelector(".welcome-alert");
+    // const welcomeCls = document.querySelector(".welcome");
+    // const welcomeOnload = localStorage.getItem("welcome");
+
+    // if (welcomeOnload && welcomeOnload === "d-none") {
+    //     welcome.classList.add("d-none");
+    // }
+
+    // setTimeout(() => {
+    //     welcome.classList.add("d-none");
+    //     localStorage.setItem("welcome", "d-none");
+    // }, 3000);
+
+    // welcomeCls.addEventListener("click", e => {
+    //     const touch = e.target;
+    //     if (touch.classList.contains("welcome")) {
+    //         setTimeout(() => {
+    //             welcome.classList.add("d-none");
+    //             localStorage.setItem("welcome", "d-none");
+    //         }, 500);
+    //     }
+    // });
 };
 
 
