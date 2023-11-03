@@ -1073,23 +1073,23 @@ body.dark .dark-light i.moon {
     width: 100%;
     height: 100%;
     padding: 0;
-    background: url("../img/") no-repeat center center / cover;
+    background: url("./images/Logos/halocybe1.png") no-repeat center center / cover;
 }
 
 .collection .c-box-img:nth-child(2) {
-    background: url("../img/banner/shopping2.jpg") no-repeat center center / cover;
+    background: url("./images/Logos/halocybe1.png") no-repeat center center / cover;
 }
 
 .xs-c-oll .c-box-img:nth-child(1) {
-    background: url("../img/banner/men-collection.jpg") no-repeat center center / cover;
+    background: url("./images/Logos/halocybe1.png") no-repeat center center / cover;
 }
 
 .xs-c-oll .c-box-img:nth-child(2) {
-    background: url("../img/banner/women-collection.jpg") no-repeat center center / cover;
+    background: url("./images/Logos/halocybe1.png") no-repeat center center / cover;
 }
 
 .xs-c-oll .c-box-img:nth-child(3) {
-    background: url("../img/banner/kid-collection.jpg") no-repeat center center / cover;
+    background: url("./images/Logos/halocybe1.png") no-repeat center center / cover;
 }
 
 .collection .c-box {
