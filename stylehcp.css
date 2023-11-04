@@ -664,7 +664,8 @@ body.dark .dark-light i.moon {
     box-shadow: var(--cat-shadow);
     border-radius: 4px;
     transition: box-shadow .2s ease-in;
-    margin-top: 35px;
+    margin-top: 35px; 
+    margin: 10px;	
 }
 
 .cat-box:hover {
