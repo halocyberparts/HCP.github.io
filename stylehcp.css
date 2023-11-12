@@ -2041,6 +2041,7 @@ marquee {
 @media screen and (min-width: 900px) {
     .bigger-text {
         font-size: 1.3rem;
+	word-wrap: break-word;	    
     }
 }
 
