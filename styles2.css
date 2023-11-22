@@ -2688,7 +2688,7 @@ marquee {
 
     /* Categories */
     .product-box {
-        height: 444px !important;
+        height: 764px !important;
         grid-template-columns: repeat(2, minmax(80px, 1fr)) !important;
         grid-template-rows: repeat(auto-fill, minmax(auto, 1fr)) !important;
         justify-content: center;
