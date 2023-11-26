@@ -747,7 +747,7 @@ body.dark .dark-light i.moon {
 
 .sub-title {
     color: var(--black-high);
-    
+    font-size: 30px;
     font-weight: 600;
 }
 
