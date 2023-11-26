@@ -647,6 +647,9 @@ body.dark .dark-light i.moon {
     z-index: 99999 !important;
 }
 
+.product-size {
+    font-size: 4rem;
+}
 /* Categories */
 .product-box {
     margin: 50px auto;
