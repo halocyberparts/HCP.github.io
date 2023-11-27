@@ -1591,6 +1591,10 @@ body.dark .dark-light i.moon {
     background-color: var(--black-high);
 }
 
+.mc {
+    text-align: center;
+}
+
 .single-details {
     padding-top: 30px;
 }
