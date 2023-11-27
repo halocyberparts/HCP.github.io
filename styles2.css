@@ -736,6 +736,10 @@ body.dark .dark-light i.moon {
     box-shadow: 20px 20px 30px rgba(0, 0, 0, .06);
 }
 
+.title-sec-2 {
+   color: red;		
+}
+
 .title {
     margin: 40px auto;
 }
