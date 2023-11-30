@@ -246,6 +246,10 @@ ul {
     background-color: var(--white);
 }
 
+.left-text {
+    text-align: left;
+}
+
 .btn {
     color: var(--black-high) !important;
     box-shadow: var(--btn-shadow) !important;
