@@ -1601,8 +1601,7 @@ body.dark .dark-light i.moon {
 
 .single-details {
     padding-top: 30px;
-    margin-left: 9px;
-    margin-right: 9px;	
+    padding-left: calc(var(--bs-gutter-x) * .2);
 }
 
 .single-details h4 {
