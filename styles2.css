@@ -682,6 +682,12 @@ body.dark .dark-light i.moon {
 }	
 
 /* Products */
+.product-block {
+    margin-top: 20px;
+    background: #00a2ff;
+    border-radius: 0 0 10px 10px;
+}
+
 .products .pm {
     padding: 60px 0;
 }
