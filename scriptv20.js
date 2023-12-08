@@ -119,7 +119,26 @@ const modeLD = (() => {
     //         }
     //     }
     // }
-    function showContents() {
+//     function showContents() {
+//     if (httpRequest.readyState === XMLHttpRequest.DONE) {
+//         if (httpRequest.status === 200) {
+//             let newMode = localStorage.getItem("mode");
+//             let currentMode = // Get the current mode from the UI or wherever it's stored.
+
+//             if (newMode !== currentMode) {
+//                 checkBgMode(newMode);
+//                 // Reload the page only if the mode has changed.
+//                 window.location.href = window.location.href;
+//             } else {
+//                 // If the mode hasn't changed, you can choose to do something else or nothing.
+//                 console.log('Mode has not changed.');
+//             }
+//         } else {
+//             console.log('There was a problem with the request.');
+//         }
+//     }
+// }
+function showContents() {
     if (httpRequest.readyState === XMLHttpRequest.DONE) {
         if (httpRequest.status === 200) {
             let newMode = localStorage.getItem("mode");
@@ -138,7 +157,6 @@ const modeLD = (() => {
         }
     }
 }
-
 })();
 
 // dark and light mode   
