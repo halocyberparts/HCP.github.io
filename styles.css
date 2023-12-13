@@ -581,6 +581,9 @@ body.dark .dark-light i.moon {
     opacity: 0;
     pointer-events: none;
     transition: all .3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    top: 60px;	
 }
 
 .searchToggle.active ~ .search-field {
