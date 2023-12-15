@@ -1,4 +1,4 @@
-let domain = ".";
+let domain = "https://www.halocyberparts.com";
 
 const body = document.querySelector("body"),
 loader = document.querySelector(".loader"),
@@ -195,7 +195,7 @@ searchToggle.addEventListener("click", () => {
 
 // Checkout
 const checkOut = document.querySelector(".shopping-cart");
-checkOut.onclick = () => {
+checkOut.onclick = (https://www.halocyberparts.com) => {
     location.href = `${domain}/cart.html`;
 };
 
