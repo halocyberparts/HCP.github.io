@@ -1,4 +1,4 @@
-let domain = "https://www.halocyberparts.com";
+let domain = ".";
 
 const body = document.querySelector("body"),
 loader = document.querySelector(".loader"),
@@ -86,13 +86,13 @@ const checkBgMode = (mode) => {
     if(mode) {
         switch(mode) {
             case 'light-mode':
-                navLogo.src = `${domain}/images/Logos/logo3.png`;
+                navLogo.src = `${domain}/images/logo3.png`;
                 footerLogo.src = `${domain}/images/logo3.png`;
             break;
             case 'dark-mode':
                 body.classList.add("dark");
-                navLogo.src = `${domain}/images/Logos/logo3.png`;
-                footerLogo.src = `${domain}/images/Logos/logo2.png`;
+                navLogo.src = `${domain}/images/logo3.png`;
+                footerLogo.src = `${domain}/images/logo3.png`;
             break;
             default:
                 return;
@@ -195,7 +195,7 @@ searchToggle.addEventListener("click", () => {
 
 // Checkout
 const checkOut = document.querySelector(".shopping-cart");
-checkOut.onclick = (https://www.halocyberparts.com) => {
+checkOut.onclick = () => {
     location.href = `${domain}/cart.html`;
 };
 
