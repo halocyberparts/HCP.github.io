@@ -23,18 +23,22 @@ window.onscroll = () => {
 
 
     
-  window.onload = () => {
+ window.onload = () => {
     if (window.location.pathname.includes("/")) {
         domain = "..";
 
         const imgDir = document.querySelectorAll('img');
         imgDir.forEach(item => {
-            if (item.getAttribute('src').indexOf('./images') < 1) {
-                const nItem = item.getAttribute('src').replace('./images', '../images');
+            const srcAttribute = item.getAttribute('src');
+            
+            if (srcAttribute && srcAttribute.indexOf('./images') < 1) {
+                const nItem = srcAttribute.replace('./images', '../images');
                 item.src = nItem;
             }
         });
     }
+};
+
 
     document.querySelector(".loader").classList.add("off");
     setTimeout(() => {
