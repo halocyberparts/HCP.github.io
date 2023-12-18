@@ -23,22 +23,18 @@ window.onscroll = () => {
 
 
     
- window.onload = () => {
+  window.onload = () => {
     if (window.location.pathname.includes("/")) {
         domain = "..";
 
         const imgDir = document.querySelectorAll('img');
         imgDir.forEach(item => {
-            const srcAttribute = item.getAttribute('src');
-            
-            if (srcAttribute && srcAttribute.indexOf('./images') < 1) {
-                const nItem = srcAttribute.replace('./images', '../images');
+            if (item.getAttribute('src').indexOf('./images') < 1) {
+                const nItem = item.getAttribute('src').replace('./images', '../images');
                 item.src = nItem;
             }
         });
     }
-};
-
 
     document.querySelector(".loader").classList.add("off");
     setTimeout(() => {
@@ -83,20 +79,20 @@ welcome?.addEventListener("click", () => {
     //         }, 500);
     //     }
     // });
-// };
+};
 
 
 const checkBgMode = (mode) => {
     if(mode) {
         switch(mode) {
             case 'light-mode':
-                navLogo.src = `${domain}/images/logo2.png`;
-                footerLogo.src = `${domain}/images/logo2.png`;
+                navLogo.src = `${domain}/images/logo3.png`;
+                footerLogo.src = `${domain}/images/logo3.png`;
             break;
             case 'dark-mode':
                 body.classList.add("dark");
-                navLogo.src = `${domain}/images/logo2.png`;
-                footerLogo.src = `${domain}/images/logo2.png`;
+                navLogo.src = `${domain}/images/logo3.png`;
+                footerLogo.src = `${domain}/images/logo3.png`;
             break;
             default:
                 return;
