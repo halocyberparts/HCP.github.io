@@ -82,24 +82,49 @@ welcome?.addEventListener("click", () => {
 // };
 
 
-const checkBgMode = (mode) => {
-    if(mode) {
-        switch(mode) {
-            case 'light-mode':
-                navLogo.src = `${domain}/images/logo2.png`;
-                footerLogo.src = `${domain}/images/logo2.png`;
-            break;
-            case 'dark-mode':
-                body.classList.add("dark");
-                navLogo.src = `${domain}/images/logo2.png`;
-                footerLogo.src = `${domain}/images/logo2.png`;
-            break;
-            default:
-                return;
+// const checkBgMode = (mode) => {
+//     if(mode) {
+//         switch(mode) {
+//             case 'light-mode':
+//                 navLogo.src = `${domain}/images/logo2.png`;
+//                 footerLogo.src = `${domain}/images/logo2.png`;
+//             break;
+//             case 'dark-mode':
+//                 body.classList.add("dark");
+//                 navLogo.src = `${domain}/images/logo2.png`;
+//                 footerLogo.src = `${domain}/images/logo2.png`;
+//             break;
+//             default:
+//                 return;
+//         }
+//     }
+// }
+
+ const checkBgMode = (mode) => {
+    if (mode) {
+        const navLogo = document.querySelector(".nav-logo");
+        const footerLogo = document.querySelector(".footer-logo");
+
+        if (navLogo && footerLogo) {
+            switch (mode) {
+                case 'light-mode':
+                    navLogo.src = `${domain}/images/logo2.png`;
+                    footerLogo.src = `${domain}/images/logo2.png`;
+                    break;
+                case 'dark-mode':
+                    body.classList.add("dark");
+                    navLogo.src = `${domain}/images/logo2.png`;
+                    footerLogo.src = `${domain}/images/logo2.png`;
+                    break;
+                default:
+                    return;
+            }
+        } else {
+            console.error("navLogo or footerLogo not found in the DOM");
         }
     }
 }
-
+     
 // Light & Dark mode, Real Time | Localstorage Changes
 const modeLD = (() => {
     let httpRequest;
