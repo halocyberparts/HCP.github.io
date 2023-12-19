@@ -9,7 +9,7 @@ modeToggle = document.querySelector(".dark-light"),
 searchToggle = document.querySelector(".searchToggle"),
 navOpen = document.querySelector(".open-nav"),
 navClose = document.querySelector(".close-nav"),
-navLogo = document.querySelector(".nav-logo"),
+navLogo = document.querySelector(".nav-logo2"),
 footerLogo = document.querySelector(".footer-logo"),
 year = document.getElementById("year");
 
