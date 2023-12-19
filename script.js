@@ -23,23 +23,44 @@ window.onscroll = () => {
 
 
     
-  window.onload = () => {
-    if (window.location.pathname.includes("/")) {
-        domain = "..";
+  // window.onload = () => {
+  //   if (window.location.pathname.includes("/")) {
+  //       domain = "..";
 
-        const imgDir = document.querySelectorAll('img');
-        imgDir.forEach(item => {
-            if (item.getAttribute('src').indexOf('./images') < 1) {
-                const nItem = item.getAttribute('src').replace('./images', '../images');
-                item.src = nItem;
-            }
-        });
+  //       const imgDir = document.querySelectorAll('img');
+  //       imgDir.forEach(item => {
+  //           if (item.getAttribute('src').indexOf('./images') < 1) {
+  //               const nItem = item.getAttribute('src').replace('./images', '../images');
+  //               item.src = nItem;
+  //           }
+  //       });
+  //   }
+
+  //   document.querySelector(".loader").classList.add("off");
+  //   setTimeout(() => {
+  //       document.querySelector(".loader").style.display = "none !important; opacity: 0; z-index: -1;";
+  //   }, 700);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const welcome = document.querySelector(".welcome-alert");
+    const welcomeOnload = localStorage.getItem("welcome");
+
+    if (welcomeOnload && welcomeOnload === "d-none") {
+        welcome.classList.add("d-none");
     }
 
-    document.querySelector(".loader").classList.add("off");
     setTimeout(() => {
-        document.querySelector(".loader").style.display = "none !important; opacity: 0; z-index: -1;";
-    }, 700);
+        welcome.classList.add("d-none");
+        localStorage.setItem("welcome", "d-none");
+    }, 3000);
+
+    welcome.addEventListener("click", () => {
+        welcome.classList.add("d-none");
+        localStorage.setItem("welcome", "d-none");
+    });
+
+    // The rest of your code...
+});
 
     const modeOnload = localStorage.getItem("mode");
     checkBgMode(modeOnload);
