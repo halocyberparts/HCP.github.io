@@ -57,29 +57,29 @@ welcome?.addEventListener("click", () => {
     welcome.style.display = "none";
 });
   
-    const welcome = document.querySelector(".welcome-alert");
-    const welcomeCls = document.querySelector(".welcome");
-    const welcomeOnload = localStorage.getItem("welcome");
+//     const welcome = document.querySelector(".welcome-alert");
+//     const welcomeCls = document.querySelector(".welcome");
+//     const welcomeOnload = localStorage.getItem("welcome");
 
-    if (welcomeOnload && welcomeOnload === "d-none") {
-        welcome.classList.add("d-none");
-    }
+//     if (welcomeOnload && welcomeOnload === "d-none") {
+//         welcome.classList.add("d-none");
+//     }
 
-    setTimeout(() => {
-        welcome.classList.add("d-none");
-        localStorage.setItem("welcome", "d-none");
-    }, 3000);
+//     setTimeout(() => {
+//         welcome.classList.add("d-none");
+//         localStorage.setItem("welcome", "d-none");
+//     }, 3000);
 
-    welcomeCls.addEventListener("click", e => {
-        const touch = e.target;
-        if (touch.classList.contains("welcome")) {
-            setTimeout(() => {
-                welcome.classList.add("d-none");
-                localStorage.setItem("welcome", "d-none");
-            }, 500);
-        }
-    });
-};
+//     welcomeCls.addEventListener("click", e => {
+//         const touch = e.target;
+//         if (touch.classList.contains("welcome")) {
+//             setTimeout(() => {
+//                 welcome.classList.add("d-none");
+//                 localStorage.setItem("welcome", "d-none");
+//             }, 500);
+//         }
+//     });
+// };
 
 
 // const checkBgMode = (mode) => {
@@ -99,6 +99,24 @@ welcome?.addEventListener("click", () => {
 //         }
 //     }
 // }
+
+const welcome = document.querySelector(".welcome-alert");
+const welcomeOnload = localStorage.getItem("welcome");
+
+if (welcomeOnload && welcomeOnload === "d-none") {
+    welcome.classList.add("d-none");
+}
+
+setTimeout(() => {
+    welcome.classList.add("d-none");
+    localStorage.setItem("welcome", "d-none");
+}, 3000);
+
+welcome.addEventListener("click", () => {
+    welcome.classList.add("d-none");
+    localStorage.setItem("welcome", "d-none");
+});
+
 
  const checkBgMode = (mode) => {
     if (mode) {
