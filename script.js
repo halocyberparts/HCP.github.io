@@ -9,7 +9,7 @@ modeToggle = document.querySelector(".dark-light"),
 searchToggle = document.querySelector(".searchToggle"),
 navOpen = document.querySelector(".open-nav"),
 navClose = document.querySelector(".close-nav"),
-navLogo = document.querySelector(".nav-logo2"),
+navLogo = document.querySelector(".nav-logo"),
 footerLogo = document.querySelector(".footer-logo"),
 year = document.getElementById("year");
 
@@ -21,207 +21,85 @@ window.onscroll = () => {
     }
 };
 
-document.addEventListener("DOMContentLoaded", function () {
-    let domain = ".";
 
-    const body = document.querySelector("body"),
-        loader = document.querySelector(".loader"),
-        header = document.querySelector(".header"),
-        nav = document.querySelector("nav.menu"),
-        modeToggle = document.querySelector(".dark-light"),
-        navLogo = document.querySelector(".nav-logo"),
-        footerLogo = document.querySelector(".footer-logo"),
-        year = document.getElementById("year"),
-        welcome = document.querySelector(".welcome-alert");
+    
+  window.onload = () => {
+    if (window.location.pathname.includes("/")) {
+        domain = "..";
 
-    window.onscroll = () => {
-        if (window.scrollY > 20) {
-            header.classList.add("f-nav");
-        } else {
-            header.classList.remove("f-nav");
-        }
-    };
+        const imgDir = document.querySelectorAll('img');
+        imgDir.forEach(item => {
+            if (item.getAttribute('src').indexOf('./images') < 1) {
+                const nItem = item.getAttribute('src').replace('./images', '../images');
+                item.src = nItem;
+            }
+        });
+    }
 
-    // Other code...
-
-    welcome?.addEventListener("click", () => {
-        welcome.classList.add("d-none");
-        localStorage.setItem("welcome", "d-none");
-    });
+    document.querySelector(".loader").classList.add("off");
+    setTimeout(() => {
+        document.querySelector(".loader").style.display = "none !important; opacity: 0; z-index: -1;";
+    }, 700);
 
     const modeOnload = localStorage.getItem("mode");
     checkBgMode(modeOnload);
 
-    function checkBgMode(mode) {
-        if (mode) {
-            if (navLogo && footerLogo) {
-                switch (mode) {
-                    case 'light-mode':
-                        navLogo.src = `${domain}/images/logo2.png`;
-                        footerLogo.src = `${domain}/images/logo2.png`;
-                        break;
-                    case 'dark-mode':
-                        body.classList.add("dark");
-                        navLogo.src = `${domain}/images/logo2.png`;
-                        footerLogo.src = `${domain}/images/logo2.png`;
-                        break;
-                    default:
-                        return;
-                }
-            } else {
-                console.error("navLogo or footerLogo not found in the DOM");
-            }
-        }
-    }
-
-    // Rest of your code...
-
-    // Year
-    year.innerText = new Date().getFullYear();
-});
-
-    
-  // window.onload = () => {
-  //   if (window.location.pathname.includes("/")) {
-  //       domain = "..";
-
-  //       const imgDir = document.querySelectorAll('img');
-  //       imgDir.forEach(item => {
-  //           if (item.getAttribute('src').indexOf('./images') < 1) {
-  //               const nItem = item.getAttribute('src').replace('./images', '../images');
-  //               item.src = nItem;
-  //           }
-  //       });
-  //   }
-
-  //   document.querySelector(".loader").classList.add("off");
-  //   setTimeout(() => {
-  //       document.querySelector(".loader").style.display = "none !important; opacity: 0; z-index: -1;";
-  //   }, 700);
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     const welcome = document.querySelector(".welcome-alert");
-//     const welcomeOnload = localStorage.getItem("welcome");
-
-//     if (welcomeOnload && welcomeOnload === "d-none") {
-//         welcome.classList.add("d-none");
-//     }
-
-//     setTimeout(() => {
-//         welcome.classList.add("d-none");
-//         localStorage.setItem("welcome", "d-none");
-//     }, 3000);
-
-//     welcome.addEventListener("click", () => {
-//         welcome.classList.add("d-none");
-//         localStorage.setItem("welcome", "d-none");
-//     });
-
-//     // The rest of your code...
-// });
-
-//     const modeOnload = localStorage.getItem("mode");
-//     checkBgMode(modeOnload);
-
-//     // Simplified welcome alert code
-// const welcome = document.querySelector(".welcome-alert");
-
-// if (welcome) {
-//     setTimeout(() => {
-//         welcome.style.display = "none";
-//     }, 3000);
-// }
-
-// welcome?.addEventListener("click", () => {
-//     welcome.style.display = "none";
-// });
-  
-//     const welcome = document.querySelector(".welcome-alert");
-//     const welcomeCls = document.querySelector(".welcome");
-//     const welcomeOnload = localStorage.getItem("welcome");
-
-//     if (welcomeOnload && welcomeOnload === "d-none") {
-//         welcome.classList.add("d-none");
-//     }
-
-//     setTimeout(() => {
-//         welcome.classList.add("d-none");
-//         localStorage.setItem("welcome", "d-none");
-//     }, 3000);
-
-//     welcomeCls.addEventListener("click", e => {
-//         const touch = e.target;
-//         if (touch.classList.contains("welcome")) {
-//             setTimeout(() => {
-//                 welcome.classList.add("d-none");
-//                 localStorage.setItem("welcome", "d-none");
-//             }, 500);
-//         }
-//     });
-// };
-
-
-// const checkBgMode = (mode) => {
-//     if(mode) {
-//         switch(mode) {
-//             case 'light-mode':
-//                 navLogo.src = `${domain}/images/logo2.png`;
-//                 footerLogo.src = `${domain}/images/logo2.png`;
-//             break;
-//             case 'dark-mode':
-//                 body.classList.add("dark");
-//                 navLogo.src = `${domain}/images/logo2.png`;
-//                 footerLogo.src = `${domain}/images/logo2.png`;
-//             break;
-//             default:
-//                 return;
-//         }
-//     }
-// }
-
+    // Simplified welcome alert code
 const welcome = document.querySelector(".welcome-alert");
-const welcomeOnload = localStorage.getItem("welcome");
 
-if (welcomeOnload && welcomeOnload === "d-none") {
-    welcome.classList.add("d-none");
+if (welcome) {
+    setTimeout(() => {
+        welcome.style.display = "none";
+    }, 3000);
 }
 
-setTimeout(() => {
-    welcome.classList.add("d-none");
-    localStorage.setItem("welcome", "d-none");
-}, 3000);
-
-welcome.addEventListener("click", () => {
-    welcome.classList.add("d-none");
-    localStorage.setItem("welcome", "d-none");
+welcome?.addEventListener("click", () => {
+    welcome.style.display = "none";
 });
+  
+    // const welcome = document.querySelector(".welcome-alert");
+    // const welcomeCls = document.querySelector(".welcome");
+    // const welcomeOnload = localStorage.getItem("welcome");
+
+    // if (welcomeOnload && welcomeOnload === "d-none") {
+    //     welcome.classList.add("d-none");
+    // }
+
+    // setTimeout(() => {
+    //     welcome.classList.add("d-none");
+    //     localStorage.setItem("welcome", "d-none");
+    // }, 3000);
+
+    // welcomeCls.addEventListener("click", e => {
+    //     const touch = e.target;
+    //     if (touch.classList.contains("welcome")) {
+    //         setTimeout(() => {
+    //             welcome.classList.add("d-none");
+    //             localStorage.setItem("welcome", "d-none");
+    //         }, 500);
+    //     }
+    // });
+};
 
 
- const checkBgMode = (mode) => {
-    if (mode) {
-        const navLogo = document.querySelector(".nav-logo");
-        const footerLogo = document.querySelector(".footer-logo");
-
-        if (navLogo && footerLogo) {
-            switch (mode) {
-                case 'light-mode':
-                    navLogo.src = `${domain}/images/logo2.png`;
-                    footerLogo.src = `${domain}/images/logo2.png`;
-                    break;
-                case 'dark-mode':
-                    body.classList.add("dark");
-                    navLogo.src = `${domain}/images/logo2.png`;
-                    footerLogo.src = `${domain}/images/logo2.png`;
-                    break;
-                default:
-                    return;
-            }
-        } else {
-            console.error("navLogo or footerLogo not found in the DOM");
+const checkBgMode = (mode) => {
+    if(mode) {
+        switch(mode) {
+            case 'light-mode':
+                navLogo.src = `${domain}/images/logo3.png`;
+                footerLogo.src = `${domain}/images/logo3.png`;
+            break;
+            case 'dark-mode':
+                body.classList.add("dark");
+                navLogo.src = `${domain}/images/logo3.png`;
+                footerLogo.src = `${domain}/images/logo3.png`;
+            break;
+            default:
+                return;
         }
     }
 }
-     
+
 // Light & Dark mode, Real Time | Localstorage Changes
 const modeLD = (() => {
     let httpRequest;
