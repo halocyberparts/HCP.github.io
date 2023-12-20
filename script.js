@@ -79,23 +79,48 @@ welcome?.addEventListener("click", () => {
     //         }, 500);
     //     }
     // });
-};
+// };
 
+
+// const checkBgMode = (mode) => {
+//     if(mode) {
+//         switch(mode) {
+//             case 'light-mode':
+//                 navLogo.src = `${domain}/images/logo2.png`;
+//                 footerLogo.src = `${domain}/images/logo2.png`;
+//             break;
+//             case 'dark-mode':
+//                 body.classList.add("dark");
+//                 navLogo.src = `${domain}/images/logo2.png`;
+//                 footerLogo.src = `${domain}/images/logo2.png`;
+//             break;
+//             default:
+//                 return;
+//         }
+//     }
+// }
 
 const checkBgMode = (mode) => {
-    if(mode) {
-        switch(mode) {
-            case 'light-mode':
-                navLogo.src = `${domain}/images/logo3.png`;
-                footerLogo.src = `${domain}/images/logo3.png`;
-            break;
-            case 'dark-mode':
-                body.classList.add("dark");
-                navLogo.src = `${domain}/images/logo3.png`;
-                footerLogo.src = `${domain}/images/logo3.png`;
-            break;
-            default:
-                return;
+    if (mode) {
+        const navLogo = document.querySelector(".nav-logo");
+        const footerLogo = document.querySelector(".footer-logo");
+
+        if (navLogo && footerLogo) {
+            switch (mode) {
+                case 'light-mode':
+                    navLogo.src = `${domain}/images/logo2.png`;
+                    footerLogo.src = `${domain}/images/logo2.png`;
+                    break;
+                case 'dark-mode':
+                    body.classList.add("dark");
+                    navLogo.src = `${domain}/images/logo2.png`;
+                    footerLogo.src = `${domain}/images/logo2.png`;
+                    break;
+                default:
+                    return;
+            }
+        } else {
+            console.error("navLogo or footerLogo not found in the DOM");
         }
     }
 }
@@ -298,4 +323,28 @@ if(window.location.host) {
 }
 
 // Year
-year.innerText = new Date().getFullYear();
+// year.innerText = new Date().getFullYear()
+
+document.addEventListener("DOMContentLoaded", function() {
+    const year = document.getElementById("year");
+    if (year) {
+        year.innerText = new Date().getFullYear();
+    } else {
+        console.error("Element with ID 'year' not found.");
+    }
+
+    // Rest of your JavaScript code goes here...
+
+    // For example, the code related to the loader:
+    document.querySelector(".loader").classList.add("off");
+    setTimeout(() => {
+        document.querySelector(".loader").style.display = "none";
+    }, 700);
+
+    // ... other code ...
+
+    // Light & Dark mode, Real Time | Localstorage Changes
+    const modeLD = (() => {
+        // ... code for modeLD ...
+    })();
+});
