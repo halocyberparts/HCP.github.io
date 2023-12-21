@@ -44,88 +44,45 @@ window.onscroll = () => {
     const modeOnload = localStorage.getItem("mode");
     checkBgMode(modeOnload);
 
-// Simplified welcome alert code
-const welcome = document.querySelector(".welcome-alert");
+    const welcome = document.querySelector(".welcome-alert");
+    const welcomeCls = document.querySelector(".welcome");
+    const welcomeOnload = localStorage.getItem("welcome");
 
-if (welcome) {
+    if (welcomeOnload && welcomeOnload === "d-none") {
+        welcome.classList.add("d-none");
+    }
+
     setTimeout(() => {
-        welcome.style.display = "none";
+        welcome.classList.add("d-none");
+        localStorage.setItem("welcome", "d-none");
     }, 3000);
 
-    welcome?.addEventListener("click", () => {
-        welcome.style.display = "none";
+    welcomeCls.addEventListener("click", e => {
+        const touch = e.target;
+        if (touch.classList.contains("welcome")) {
+            setTimeout(() => {
+                welcome.classList.add("d-none");
+                localStorage.setItem("welcome", "d-none");
+            }, 500);
+        }
     });
-}
+};
 
-// The rest of your code...
-
-
-
-      
-    // const welcome = document.querySelector(".welcome-alert");
-    // const welcomeCls = document.querySelector(".welcome");
-    // const welcomeOnload = localStorage.getItem("welcome");
-
-    // if (welcomeOnload && welcomeOnload === "d-none") {
-    //     welcome.classList.add("d-none");
-    // }
-
-    // setTimeout(() => {
-    //     welcome.classList.add("d-none");
-    //     localStorage.setItem("welcome", "d-none");
-    // }, 3000);
-
-    // welcomeCls.addEventListener("click", e => {
-    //     const touch = e.target;
-    //     if (touch.classList.contains("welcome")) {
-    //         setTimeout(() => {
-    //             welcome.classList.add("d-none");
-    //             localStorage.setItem("welcome", "d-none");
-    //         }, 500);
-    //     }
-    // });
-// };
-
-
-// const checkBgMode = (mode) => {
-//     if(mode) {
-//         switch(mode) {
-//             case 'light-mode':
-//                 navLogo.src = `${domain}/images/logo2.png`;
-//                 footerLogo.src = `${domain}/images/logo2.png`;
-//             break;
-//             case 'dark-mode':
-//                 body.classList.add("dark");
-//                 navLogo.src = `${domain}/images/logo2.png`;
-//                 footerLogo.src = `${domain}/images/logo2.png`;
-//             break;
-//             default:
-//                 return;
-//         }
-//     }
-// }
 
 const checkBgMode = (mode) => {
-    if (mode) {
-        const navLogo = document.querySelector(".nav-logo");
-        const footerLogo = document.querySelector(".footer-logo");
-
-        if (navLogo && footerLogo) {
-            switch (mode) {
-                case 'light-mode':
-                    navLogo.src = `${domain}/images/logo2.png`;
-                    footerLogo.src = `${domain}/images/logo2.png`;
-                    break;
-                case 'dark-mode':
-                    body.classList.add("dark");
-                    navLogo.src = `${domain}/images/logo2.png`;
-                    footerLogo.src = `${domain}/images/logo2.png`;
-                    break;
-                default:
-                    return;
-            }
-        } else {
-            console.error("navLogo or footerLogo not found in the DOM");
+    if(mode) {
+        switch(mode) {
+            case 'light-mode':
+                navLogo.src = `${domain}/images/logo3.png`;
+                footerLogo.src = `${domain}/images/logo3.png`;
+            break;
+            case 'dark-mode':
+                body.classList.add("dark");
+                navLogo.src = `${domain}/images/logo3.png`;
+                footerLogo.src = `${domain}/images/logo3.png`;
+            break;
+            default:
+                return;
         }
     }
 }
@@ -144,7 +101,6 @@ const modeLD = (() => {
         }
         
         httpRequest.onreadystatechange = showContents;
-        httpRequest.onerror = handleRequestError; // Add this line
         
         let path = window.location.pathname;
         let page = path.split("/").pop();
@@ -159,50 +115,10 @@ const modeLD = (() => {
                 checkBgMode(mode);
             } else {
                 console.log('There was a problem with the request.');
-                handleRequestError(); // Handle the error
             }
         }
     }
-
-    // Define a function to handle errors
-    function handleRequestError() {
-        // Implement your error handling logic here
-        console.log('An error occurred during the request.');
-        // You can display an error message to the user or take other appropriate actions.
-    }
 })();
-
-// const modeLD = (() => {
-//     let httpRequest;
-    // modeToggle.addEventListener('click', makeRequest);
-    
-    // function makeRequest() {
-    //     httpRequest = new XMLHttpRequest();
-    
-    //     if (!httpRequest) {
-    //         console.log('Cannot create an XMLHTTP instance');
-    //         return false;
-    //     }
-        
-    //     httpRequest.onreadystatechange = showContents;
-        
-    //     let path = window.location.pathname;
-    //     let page = path.split("/").pop();
-    //     httpRequest.open('GET', `${page}`);
-    //     httpRequest.send();
-    // }
-    
-    // function showContents() {
-    //     if (httpRequest.readyState === XMLHttpRequest.DONE) {
-    //         if (httpRequest.status === 200) {
-    //             let mode = localStorage.getItem("mode");
-    //             checkBgMode(mode);
-    //         } else {
-    //             console.log('There was a problem with the request.');
-    //         }
-    //     }
-    // }
-// })();
 
 // dark and light mode   
 modeToggle.addEventListener("click", () => {
@@ -328,28 +244,4 @@ if(window.location.host) {
 }
 
 // Year
-// year.innerText = new Date().getFullYear()
-
-document.addEventListener("DOMContentLoaded", function() {
-    const year = document.getElementById("year");
-    if (year) {
-        year.innerText = new Date().getFullYear();
-    } else {
-        console.error("Element with ID 'year' not found.");
-    }
-
-    // Rest of your JavaScript code goes here...
-
-    // For example, the code related to the loader:
-    document.querySelector(".loader").classList.add("off");
-    setTimeout(() => {
-        document.querySelector(".loader").style.display = "none";
-    }, 700);
-
-    // ... other code ...
-
-    // Light & Dark mode, Real Time | Localstorage Changes
-    const modeLD = (() => {
-        // ... code for modeLD ...
-    })();
-});
+year.innerText = new Date().getFullYear();
