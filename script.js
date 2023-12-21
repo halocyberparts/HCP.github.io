@@ -44,19 +44,24 @@ window.onscroll = () => {
     const modeOnload = localStorage.getItem("mode");
     checkBgMode(modeOnload);
 
-    // Simplified welcome alert code
+// Simplified welcome alert code
 const welcome = document.querySelector(".welcome-alert");
 
 if (welcome) {
     setTimeout(() => {
         welcome.style.display = "none";
     }, 3000);
+
+    welcome?.addEventListener("click", () => {
+        welcome.style.display = "none";
+    });
 }
 
-welcome?.addEventListener("click", () => {
-    welcome.style.display = "none";
-});
-  
+// The rest of your code...
+
+
+
+      
     // const welcome = document.querySelector(".welcome-alert");
     // const welcomeCls = document.querySelector(".welcome");
     // const welcomeOnload = localStorage.getItem("welcome");
