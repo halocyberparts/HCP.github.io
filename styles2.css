@@ -1628,7 +1628,7 @@ width: 100%;
 /* -> Single Page Product */
 .product-details {
     margin: 33px auto;
-    padding: 50px;
+    padding: 5px;
 }
 
 .product-details div[class^="col"] {
