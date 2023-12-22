@@ -79,7 +79,7 @@ welcome?.addEventListener("click", () => {
     //         }, 500);
     //     }
     // });
-};
+// };
 
 
 const checkBgMode = (mode) => {
