@@ -35,6 +35,7 @@ window.onscroll = () => {
             }
         });
     }
+};
 
     document.querySelector(".loader").classList.add("off");
     setTimeout(() => {
