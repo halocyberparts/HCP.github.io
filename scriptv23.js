@@ -365,5 +365,5 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   
-    // ... Add more JavaScript code as needed
+   
   });
