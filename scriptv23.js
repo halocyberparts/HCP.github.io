@@ -280,7 +280,7 @@ btnAction = cookieWrb.querySelector(".btn-actions button");
 
 if(window.location.host) {
     btnAction.onclick = () => {
-        // set cookie for 1 month and after that time expire automatically
+        // cookie for 1 month and after that time expire automatically
         document.cookie = "OraKs=com; max-age=" + 60 * 60 * 24 * 30;
         if(document.cookie) {
             setTimeout(() => {
