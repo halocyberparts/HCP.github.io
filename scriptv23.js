@@ -29,8 +29,8 @@ window.onscroll = () => {
 
         const imgDir = document.querySelectorAll('img');
         imgDir.forEach(item => {
-            if (item.getAttribute('src').indexOf('./images') < 1) {
-                const nItem = item.getAttribute('src').replace('./images', '../images');
+            if (item.getAttribute('src').indexOf('./') < 1) {
+                const nItem = item.getAttribute('src').replace('./', '../');
                 item.src = nItem;
             }
         });
