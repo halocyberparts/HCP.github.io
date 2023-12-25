@@ -57,7 +57,7 @@ welcome?.addEventListener("click", () => {
     welcome.style.display = "none";
 });
   
-    const welcome = document.querySelector(".welcome-alert");
+    // const welcome = document.querySelector(".welcome-alert");
     const welcomeCls = document.querySelector(".welcome");
     const welcomeOnload = localStorage.getItem("welcome");
 
