@@ -36,49 +36,49 @@ window.onscroll = () => {
         });
     }
 
-    document.querySelector(".loader").classList.add("off");
-    setTimeout(() => {
-        document.querySelector(".loader").style.display = "none !important; opacity: 0; z-index: 1000;";
-    }, 700);
+//     document.querySelector(".loader").classList.add("off");
+//     setTimeout(() => {
+//         document.querySelector(".loader").style.display = "none !important; opacity: 0; z-index: 1000;";
+//     }, 700);
 
-    const modeOnload = localStorage.getItem("mode");
-    checkBgMode(modeOnload);
+//     const modeOnload = localStorage.getItem("mode");
+//     checkBgMode(modeOnload);
 
-    // Simplified welcome alert code
-const welcome = document.querySelector(".welcome-alert");
+//     // Simplified welcome alert code
+// const welcome = document.querySelector(".welcome-alert");
 
-if (welcome) {
-    setTimeout(() => {
-        welcome.style.display = "none";
-    }, 3000);
-}
+// if (welcome) {
+//     setTimeout(() => {
+//         welcome.style.display = "none";
+//     }, 3000);
+// }
 
-welcome?.addEventListener("click", () => {
-    welcome.style.display = "none";
-});
+// welcome?.addEventListener("click", () => {
+//     welcome.style.display = "none";
+// });
   
-    // const welcome = document.querySelector(".welcome-alert");
-    const welcomeCls = document.querySelector(".welcome");
-    const welcomeOnload = localStorage.getItem("welcome");
+//     // const welcome = document.querySelector(".welcome-alert");
+//     const welcomeCls = document.querySelector(".welcome");
+//     const welcomeOnload = localStorage.getItem("welcome");
 
-    if (welcomeOnload && welcomeOnload === "d-none") {
-        welcome.classList.add("d-none");
-    }
+//     if (welcomeOnload && welcomeOnload === "d-none") {
+//         welcome.classList.add("d-none");
+//     }
 
-    setTimeout(() => {
-        welcome.classList.add("d-none");
-        localStorage.setItem("welcome", "d-none");
-    }, 3000);
+//     setTimeout(() => {
+//         welcome.classList.add("d-none");
+//         localStorage.setItem("welcome", "d-none");
+//     }, 3000);
 
-    welcomeCls.addEventListener("click", e => {
-        const touch = e.target;
-        if (touch.classList.contains("welcome")) {
-            setTimeout(() => {
-                welcome.classList.add("d-none");
-                localStorage.setItem("welcome", "d-none");
-            }, 500);
-        }
-    });
+//     welcomeCls.addEventListener("click", e => {
+//         const touch = e.target;
+//         if (touch.classList.contains("welcome")) {
+//             setTimeout(() => {
+//                 welcome.classList.add("d-none");
+//                 localStorage.setItem("welcome", "d-none");
+//             }, 500);
+//         }
+//     });
 };
 
 
