@@ -48,7 +48,7 @@ html {
 }
 
 body {
-    color: var(--black-med);
+    color: var(--body-bg-color);
     background-color: lightgray;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1rem;
