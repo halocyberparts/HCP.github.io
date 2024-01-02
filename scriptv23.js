@@ -36,13 +36,13 @@ window.onscroll = () => {
         });
     }
 
-    document.querySelector(".loader").classList.add("off");
-    setTimeout(() => {
-        document.querySelector(".loader").style.display = "none !important; opacity: 0; z-index: 1000;";
-    }, 700);
+    // document.querySelector(".loader").classList.add("off");
+    // setTimeout(() => {
+    //     document.querySelector(".loader").style.display = "none !important; opacity: 0; z-index: 1000;";
+    // }, 700);
 
-    const modeOnload = localStorage.getItem("mode");
-    checkBgMode(modeOnload);
+    // const modeOnload = localStorage.getItem("mode");
+    // checkBgMode(modeOnload);
 
     // Simplified welcome alert code
 const welcome = document.querySelector(".welcome-alert");
