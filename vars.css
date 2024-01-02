@@ -6,7 +6,7 @@
     --btn-hover: hsl(var(--hue-2), 50%, 53%);
     --body-bg-color: hsl(var(--hue-1), 0%, 100%, .88);
     --nav-color: hsl(0, 0%, 100%, .95);
-    --img-logo: url("../imagehcp/Logos/halocybe2.png");
+    --img-logo: url("./images/Logos/halocybe2.png");
     --bg-color: rgb(51,51,51);
     --bg-gradient-color: linear-gradient(0deg, hsla(0, 0%, 100%, .80) 0%, hsla(0, 0%, 100%, 1) 35%, hsla(0, 0%, 100%, .97) 100%);
     /* --body-bg-color: hsl(var(--hue-1), 0%, 0%, .5); */
