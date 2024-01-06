@@ -1713,7 +1713,7 @@ body.dark .dark-light i.moon {
     text-align: center;
     width: 100%;
     height: auto;
-    background: url("../img/banner/shopping.jpg") repeat center center / contain;
+    background: url("./images/shopping.gif") repeat center center / contain;
 }
 
 .about-head {
@@ -1782,7 +1782,7 @@ font-family: 'Acme', serif;
     width: 100%;
     height: auto;
     text-align: center;
-    background: url("../img/banner/shopping2.jpg") repeat center center / contain;
+    background: url("./images/shopping-online.png") repeat center center / contain;
 }
 
 .contact {
